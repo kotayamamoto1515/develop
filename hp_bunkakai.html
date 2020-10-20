@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>HP分科会　試作ホームページ</title>
+    <!--ノーマライズ-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+    <!--自作cssで調整-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1><font size = "6">
+          <a href="https://dalab.jp">HP分科会　試作ホームページ</a></font></h1>
+    </header>
+    <br>
+    <hr>
+    　　<div class="row">
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-6">
+                        <li><a href="https://www.data-artist.com/contents/data-science.html">データサイエンティストとは</a></li><br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="col-md-6" style="position:absolute; top:0px; left:500px">
+                        <img src="https://www.data-artist.com/assets/images/contents/data-science-img01.png" width="300px" height="150px"><br>
+                    </div>
+                </div>
+                <div class = "question">
+                <hr>
+                <br>
+                <form method="post">
+                  <p>この度は、本書をご利用いただきありがとうございます。恐れ入りますが、以下のフォームにご記入いただき、送信して頂けると幸いです。</p>
+                  <div class="form-group">
+                    <label for="name">お名前<span class="label label-danger">必須</span></label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="job">ご職業</label>
+                      <select id="job" name="job" class="form-control">
+                        <option value="">選択して下さい</option>
+                        <option value="会社員">会社員</option>
+                        <option value="学生">学生</option>
+                        <option value="その他">その他</option>
+                      </select>
+                 </div>
+                 <div class="form-group">
+                   <label>知りたい内容（複数回答可能）</label>
+                     <div class="checkbox">
+                       <label>
+                         <input type="checkbox" name="q1" value="html">
+                         HTML
+                       </label>
+                    </div>
+                  <div class="checkbox">
+                      <label>
+                          <input type="checkbox" name="q1" value="css">
+                          CSS
+                      </label>
+                  </div>
+                  <div class="checkbox">
+                      <label>
+                          <input type="checkbox" name="q1" value="javascript">
+                          JavaScript
+                      </label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>理解度はいかがですか？</label>
+                  <div>
+                    <label class="radio-inline">
+                      <input type="radio" name="q2" id="q2_1" value="1">理解できなかった。
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="q2" id="q2_2" value="2">だいたい理解できた。
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="q2" id="q2_3" value="3">理解できた。
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="q2" id="q2_4" value="" checked>回答しない
+                    </label>
+                   </div>
+                </div>
+                <div class="form-group">
+                  <label for="message">ご意見</label>
+                  <textarea name="message" id="message" rows="10" class="form-control"></textarea>
+                </div>
+                <buttom type="submit" class="btn btn-default">送信する</buttom><br>
+          <br>
+          </div>
+        </div>
+      </form>
+        <div class="col-md-3">
+            広告スペース広告スペース広告スペース広告スペース広告スペース広告スペース広告スペース
+            広告スペース<br>
+            広告スペース<br>
+            広告スペース<br>
+            広告スペース<br>
+            広告スペース<br>
+            広告スペース<br>
+            広告スペース<br>
+            広告スペース<br>
+            広告スペース<br>
+            広告スペース<br>
+            広告スペース<br>
+            広告スペース<br>
+            広告スペース<br>
+            広告スペース<br>
+            広告スペース<br>
+            広告スペース<br>
+            広告スペース<br>
+            広告スペース<br>
+            広告スペース<br>
+            広告スペース<br>
+            広告スペース<br>
+            広告スペース<br>
+            広告スペース<br>
+            広告スペース<br>
+            広告スペース<br>
+        </div>
+    </div>
+    <hr>
+    <script language="javascript" type="text/javascript">
+      function add() {
+        var a = document.getElementById("i0").value
+        document.getElementById("r0").textContent = a
+      }
+    </script>
+    HP分科会に携わっている人の名前を入力してください:<input id = "i0" placeholder="例) 山本 耕太"/>
+    <button onclick="add()">追加</button><br>
+    <li><span id = "r0"></span></li><br>
+    <br>
+    <hr>
+    <br>
+    <footer>作成者：HP分科会</footer>
+</body>
+</html>
