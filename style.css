@@ -1,0 +1,32 @@
+header {
+    margin-top: 30px;
+    color: #2E99A9;
+}
+
+hr {
+    border-width: 3px;
+    border-color: #2E99A9;
+}
+
+/* h1 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+} */
+h1 {
+    padding: 3rem 6rem;
+    background-image: url(out.jpg);
+}
+
+.align-right {
+    text-align: right;
+}
+
+@media only screen and (max-width: 992px) {
+    .radio-inline {
+        display: block;
+        margin: 0 !important
+    }
+}
+
+.question {background-color: #C0C0C0;}
